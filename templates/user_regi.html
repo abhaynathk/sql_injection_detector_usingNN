@@ -1,0 +1,84 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{% static '/css/css/style.css'%}">
+
+	</head>
+	<body class="img js-fullheight" style="background-image: url({% static 'images/images//a.png'%});">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">SIGNUP </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+
+		      	<form action="" method="POST">
+                    {% csrf_token %}
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" name="name" placeholder="name" required >
+		      		</div>
+                    <div>
+                        <input type="radio"  name="gender" value="Male">
+                        <label>Male</label>
+                        <input type="radio"  name="gender" value="Female">
+                        <label>Female</label>
+                        <input type="radio"  name="gender" value="Other">
+                        <label>Other</label><br>
+                    </div>
+
+
+	            <div class="form-group">
+	              <input  type="text" class="form-control" name="address" placeholder="address" required>
+
+	            </div>
+                    <div class="form-group">
+		      			<input type="text" class="form-control" name="location" placeholder="location" required>
+		      		</div>
+
+                <div class="form-group">
+		      			<input type="text" class="form-control" name="mobilenumber" placeholder="mobilenumber" required>
+		      	</div>
+				<div class="form-group">
+		      			<input type="text" class="form-control" name="username" placeholder="username" required>
+		      	</div>
+                <div class="form-group">
+		      			<input type="text" class="form-control" name="password" placeholder="password" required>
+		      	</div>
+
+
+
+
+	            <div class="form-group">
+	            	<button type="submit" class="form-control btn btn-primary submit px-3">REGISTER</button>
+	            </div>
+
+	            </div>
+	          </form>
+
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="{% static 'js/js/jquery.min.js'%}"></script>
+  <script src="{% static 'js/js/popper.js'%}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+
+	</body>
+</html>
+

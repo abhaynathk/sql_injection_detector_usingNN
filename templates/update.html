@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<style>
+        body{
+            background-color: rgb(154, 0, 214);
+        }
+    .Registration-card{
+        border-radius: 20px;
+        position: absolute;
+        left: 300px;
+        top: 20px;
+        background-color: whitesmoke;
+        height: 1000px;
+        width: 900px;
+
+
+    }
+    .Title-card{
+        border-radius: 20px;
+        position: absolute;
+        left: 20px;
+        top: 40%;
+        height: 300px;
+        width: 200px;
+        background-color: aliceblue;
+        box-shadow: 2px 2px 20px 10px rgb(245, 17, 55);
+
+
+
+    }
+
+    .img-title{
+        position: absolute;
+        left: 20px;
+        top: 70px;
+    }
+    .Reg-detail{
+        position: absolute;
+        top: 8px;
+        font-family: cursive;
+        font-size: larger;
+        left: 70%;
+
+    }
+
+    #detail{
+        font-size: small;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    input[type=text]:focus,input[type=email]:focus {
+        box-shadow: 0px 0px 5px 1px rgb(0, 204, 255);
+        padding-right: 200px;
+
+      }
+    .form{
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    .crud{
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        left:30px;
+        text-shadow: 2px 5px 5px rgb(245, 36, 71);
+    }
+</style>
+<body>
+
+<div class="Registration-card">
+
+    <h3>UPDATE DETAILS</h3>
+
+    <div class="form">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+
+            <button type="submit" class="btn btn-primary">UPDATE</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

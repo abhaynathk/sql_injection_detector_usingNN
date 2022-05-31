@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    @page {
+      size: A4;
+      margin: 1cm;
+
+      @frame footer {
+        -pdf-frame-content: footerContent;
+        bottom: 0cm;
+        margin-left: 9cm;
+        margin-right: 9cm;
+        height: 1cm;
+      }
+    }
+table {
+  font-family: "Times New Roman", Times, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+    /** RTL **/
+    .rtl {
+      direction: rtl;
+      font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+
+
+  </style>
+</head>
+
+<body>
+<h2><p style="text-align:center" >Mechanics Working Records</h2>
+<table class="table table-striped">
+  <thead>
+
+    <tr>
+      <th scope="col"><p style="font-size:14px;"  >MECHANIC NAME</th>
+      <th scope="col"><p style="font-size:14px;"  >CUSTOMER_NAME</th>
+      <th scope="col"><p style="font-size:14px;"  >CUSTOMER MOBILE</th>
+      <th scope="col"><p style="font-size:14px;"  >LOCATION</th>
+      <th scope="col"><p style="font-size:14px;"  >PAYMENT STATUS</th>
+
+
+    </tr>
+  </thead>
+
+
+
+              <td scope="col"><p style="font-size:12px;" > {{ mechanic_name}}</td>
+               <td scope="col"><p style="font-size:12px;"> {{customer_name}}</td>
+               <td scope="col"><p style="font-size:12px;">  {{customer_mobile}}  </td>
+               <td scope="col"><p style="font-size:12px;"> {{location}}</td>
+               <td scope="col"><p style="font-size:12px;">  {{payment_status}}</td>
+
+
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
